@@ -6,7 +6,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require __DIR__ .'./../example_2.8/index.php';
+require __DIR__ .'./../example_2.8/CsvFileIterator.php';
 
 class DataTest extends TestCase
 {
