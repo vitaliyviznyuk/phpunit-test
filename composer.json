@@ -11,7 +11,8 @@
         }
     ],
     "require": {
-        "php": "^7.3"
+        "php": "^7.3",
+        "ext-pdo": "*"
     },
     "autoload": {
         "psr-4": { "vitaliyviznyuk\\PHPUnitTest\\": "src/" },
