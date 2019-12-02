@@ -6,8 +6,6 @@
 
 namespace vitaliyviznyuk\PHPUnitTest;
 
-require __DIR__ . '/../example_8.11/Subject.php';
-
 use PHPUnit\Framework\TestCase;
 use stdClass;
 
