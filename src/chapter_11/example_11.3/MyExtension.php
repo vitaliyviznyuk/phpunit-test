@@ -9,29 +9,15 @@ namespace Vendor;
 use PHPUnit\Runner\BeforeFirstTestHook;
 use PHPUnit\Runner\AfterLastTestHook;
 
-final class MyConfigurableExtension implements BeforeFirstTestHook, AfterLastTestHook
+final class MyExtension implements BeforeFirstTestHook, AfterLastTestHook
 {
-    protected $config_value_1 = '';
-
-    protected $config_value_2 = 0;
-
-    public function __construct(string $value1 = '', int $value2 = 0)
-    {
-        $this->config_value_1 = $value1;
-        $this->config_value_2 = $value2;
-    }
-
     public function executeBeforeFirstTest(): void
     {
-        if (strlen($this->config_value_1)) {
-            echo 'Testing with configuration value: ' . $this->config_value_1;
-        }
+        // called before the first test is being run
     }
 
     public function executeAfterLastTest(): void
     {
-        if ($this->config_value_2 > 10) {
-            echo 'Second config value is OK!';
-        }
+        // called after the last test has been run
     }
 }
