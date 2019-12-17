@@ -1,6 +1,6 @@
 {
     "name": "vitaliyviznyuk/phpunit-test",
-    "description": "Examples from PHPUnit Manual (https://phpunit.readthedocs.io/en/8.4/index.html).",
+    "description": "Examples from PHPUnit Manual (https://phpunit.readthedocs.io/en/8.5/index.html).",
     "keywords": ["PHPUnit", "examples", "manual"],
     "type": "project",
     "license": "MIT",
@@ -24,6 +24,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "phpunit/phpunit": "8.4"
+        "phpunit/phpunit": "8.5"
     }
 }
